@@ -1,6 +1,6 @@
-<% provide(:title, 'Home') %>
-<h1>Sample App</h1>
-<p>This is the home page for the Ruby on Rails tutorial 
-    sample application.
+<% provide(:title, t('home.title')) %>
+<h1><%= t('home.heading') %></h1>
+<p> 
+    <%= t('home.body_html').html_safe %>
 </p>
 
