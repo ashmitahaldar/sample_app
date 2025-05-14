@@ -33,7 +33,8 @@ en:
 
   home:
     title: "Home"
-    heading: "Sample App"
+    heading: "Welcome to the Sample App"
+    signup: "Sign up now!"
     body_html: >
       This is the home page for the Ruby on Rails tutorial 
       sample application.
