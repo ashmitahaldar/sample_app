@@ -68,3 +68,22 @@ en:
     body_html: >
       Contact the Ruby on Rails Tutorial about the sample app at the
       <a href='https://www.railstutorial.org/contact'>contact page</a>.
+
+  signup:
+    title: "Sign up"
+    heading: "Sign up"
+    body_html: >
+      This will be a signup page for new users.
+
+  header:
+    heading: "sample app"
+    home: "Home"
+    help: "Help"
+    login: "Log in"
+
+  footer:
+    about: "About"
+    contact: "Contact"
+    news: "News"
+
+
