@@ -73,7 +73,8 @@ en:
     title: "Sign up"
     heading: "Sign up"
     body_html: >
-      This will be a signup page for new users.
+      This is a signup page for new users.
+    submit_button: "Create my account"
 
   header:
     heading: "sample app"
