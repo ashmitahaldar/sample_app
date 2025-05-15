@@ -103,12 +103,16 @@ GEM
       xpath (~> 3.2)
     coderay (1.1.3)
     concurrent-ruby (1.3.5)
+    config (5.5.2)
+      deep_merge (~> 1.2, >= 1.2.1)
+      ostruct
     connection_pool (2.5.3)
     crass (1.0.6)
     date (3.4.1)
     debug (1.10.0)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    deep_merge (1.2.2)
     dotenv (3.1.8)
     drb (2.2.1)
     ed25519 (1.4.0)
@@ -437,6 +441,7 @@ DEPENDENCIES
   bootstrap-sass
   brakeman
   capybara
+  config
   debug
   guard
   guard-minitest
