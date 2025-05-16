@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find(params[:id])
+    @user = User.find_by(id: params[:id])
+    if @user.nil?
+      flash[:danger] = "User not found."
+      redirect_to root_path
+    end
   end
 
   def new
@@ -15,7 +19,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
     else
-      render "new", status: :unprocessable_entity
+      render :new, status: :unprocessable_entity
     end
   end
 
