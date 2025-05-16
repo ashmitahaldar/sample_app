@@ -141,6 +141,24 @@ footer ul li {
   margin-left: 15px;
 }
 
+@media (max-width: 800px) {
+  footer small {
+    display: block;
+    float: none;
+    margin-bottom: 1em;
+  }
+
+  footer ul {
+    float: none;
+    padding: 0;
+  }
+
+  footer ul li {
+    float: none;
+    margin-left: 0;
+  }
+}
+
 /* sidebar */
 
 aside section.user_info {
@@ -178,6 +196,18 @@ aside section h1 {
 
 .gravatar_edit {
   margin-top: 15px;
+}
+
+/* dropdown menu */
+#dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1000;
+}
+
+#dropdown-menu.active {
+  display: block;
 }
 
 /* miscellaneous */
