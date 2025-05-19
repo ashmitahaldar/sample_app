@@ -32,12 +32,6 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find_by(id: params[:id])
-    if @user.update(user_params)
-      flash[:success] = t("edit_user.flash_updated")
-      redirect_to @user
-    else
-      render :edit, status: :unprocessable_entity
-    end
   end
 
   def update
