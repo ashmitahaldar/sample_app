@@ -76,6 +76,14 @@ en:
       This is a signup page for new users.
     submit_button: "Create my account"
 
+  login:
+    title: "Log in"
+    heading: "Log in"
+    remember_me: "Remember me on this computer"
+    submit_button: "Log in"
+    new_user: "New user?"
+    signup_link: "Sign up now!"
+
   header:
     heading: "sample app"
     home: "Home"
