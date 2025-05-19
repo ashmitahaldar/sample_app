@@ -84,6 +84,18 @@ en:
     new_user: "New user?"
     signup_link: "Sign up now!"
 
+  index:
+    title: "All users"
+    heading: "All users"
+  
+  edit_user:
+    title: "Edit user"
+    heading: "Update your profile"
+    confirm_delete: "You sure?"
+    flash_updated: "Profile updated"
+    flash_deleted: "User deleted"
+    flash_login: "Please log in"
+
   header:
     heading: "sample app"
     home: "Home"
