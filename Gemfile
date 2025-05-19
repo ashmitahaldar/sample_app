@@ -3,6 +3,9 @@ source "https://rubygems.org"
 gem "rails", "~> 8.0.2"
 
 gem "bcrypt"
+gem "faker"
+gem "will_paginate", "3.3.1"
+gem "bootstrap-will_paginate"
 gem "bootsnap", require: false
 gem "bootstrap-sass"
 gem "config"
