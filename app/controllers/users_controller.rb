@@ -34,7 +34,7 @@ class UsersController < ApplicationController
   def edit
     @user = User.find_by(id: params[:id])
     if @user.update(user_params)
-      flash[:success] = "Profile updated"
+      flash[:success] = t("edit_user.flash_updated")
       redirect_to @user
     else
       render :edit, status: :unprocessable_entity
@@ -43,7 +43,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-      flash[:success] = "Profile updated"
+      flash[:success] = t("edit_user.flash_updated")
       redirect_to(user)
     else
       render :edit, status: :unprocessable_entity
@@ -52,7 +52,7 @@ class UsersController < ApplicationController
 
   def destroy
     User.find_by(id: params[:id]).destroy
-    flash[:success] = "User deleted"
+    flash[:success] = t("edit_user.flash_deleted")
     redirect_to users_url, status: :see_other
   end
 
@@ -68,7 +68,7 @@ class UsersController < ApplicationController
   def logged_in_user
     unless logged_in?
       store_location
-      flash[:danger]= "Please log in"
+      flash[:danger]= t("edit_user.flash_login")
       redirect_to login_url, status: :see_other
     end
   end
