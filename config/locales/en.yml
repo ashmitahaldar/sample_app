@@ -98,6 +98,11 @@ en:
     flash_login: "Please log in"
     submit_button: "Save changes"
 
+  reset_password:
+    submit_button: "Submit"
+    confirmation: "Comfirmation"
+    update: "Update password"
+
   header:
     heading: "sample app"
     home: "Home"

@@ -11,10 +11,10 @@
             <%= f.label :password %>
             <%= f.password_field :password, class: 'form-control' %>
 
-            <%= f.label :password_confirmation, "Confirmation" %>
+            <%= f.label :password_confirmation, t('reset_password.confirmation') %>
             <%= f.password_confirmation :password_confirmation, class: "form-control" %>
 
-            <%= f.submit "Update password", class: "btn btn-primary" %>
+            <%= f.submit t('reset_password.update'), class: "btn btn-primary" %>
         <% end %>
     </div>
 </div>
