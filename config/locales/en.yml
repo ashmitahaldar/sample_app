@@ -83,6 +83,7 @@ en:
     submit_button: "Log in"
     new_user: "New user?"
     signup_link: "Sign up now!"
+    forgot_password: "(forgot password)"
 
   index:
     title: "All users"
