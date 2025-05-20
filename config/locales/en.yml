@@ -95,6 +95,7 @@ en:
     flash_updated: "Profile updated"
     flash_deleted: "User deleted"
     flash_login: "Please log in"
+    submit_button: "Save changes"
 
   header:
     heading: "sample app"
