@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "rails", "~> 8.0.2"
 
+gem "active_storage_validations"
 gem "bcrypt"
 gem "faker"
 gem "will_paginate", "3.3.1"
@@ -10,6 +11,7 @@ gem "bootsnap", require: false
 gem "bootstrap-sass"
 gem "config"
 gem "sassc-rails"
+gem "image_processing"
 gem "importmap-rails"
 gem "jbuilder"
 gem "kamal", require: false
