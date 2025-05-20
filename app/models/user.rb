@@ -3,6 +3,8 @@ class User < ApplicationRecord
   before_save :downcase_email # can also use before_save { email.downcase! }
   before_create :create_activation_digest
 
+  scope :activated_users, -> { where(activated: true) }
+
   validates :name, presence: true, length: { maximum: 50 }
 
   validates :email, presence: true, length: { maximum: 255 },
@@ -67,6 +69,11 @@ class User < ApplicationRecord
   # Sends password reset email
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
+  end
+
+  # Returns true if a password reset has expired
+  def password_reset_expired?
+    reset_sent_at < 2.hours.ago
   end
 
   private
