@@ -17,7 +17,6 @@ gem "jbuilder"
 gem "kamal", require: false
 gem "propshaft"
 gem "puma", ">= 5.0"
-gem "rubocop", require: false
 gem "solid_cache"
 gem "solid_queue"
 gem "solid_cable"
@@ -35,6 +34,8 @@ end
 
 group :development do
   gem "web-console"
+  gem "pry"
+  gem "rubocop", require: false
 end
 
 group :test do
